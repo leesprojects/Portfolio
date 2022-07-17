@@ -8,8 +8,8 @@ const c_stars = 0xffffff
 
 //Scene 
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(c_background);
-const backgroundTexture = new THREE.TextureLoader().load('media/images/background-gradient-a.jpg');
+//scene.background = new THREE.Color(c_background);
+const backgroundTexture = new THREE.TextureLoader().load('assets/images/background-gradient-a.jpg');
 scene.background = backgroundTexture;
 
 //Camera
@@ -62,10 +62,17 @@ function addStar(){
 }
 
 
+function MoveCamera(){
+  const t = document.body.getBoundingClientRect().top;
+  camera.position.z = t * -0.01;
+  camera.position.x = t * -0.0002;
+  camera.position.y = t * -0.0002;
+}
+
+//document.body.onscroll = MoveCamera
+
 function Animate() {
   requestAnimationFrame( Animate );
-
-
   controls.update();
   renderer.render( scene, camera );
 };
