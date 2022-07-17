@@ -52,7 +52,10 @@ function addStar(){
   const material = new THREE.MeshStandardMaterial( {color: c_stars} )
   const star = new THREE.Mesh( geometry, material);
 
-  const [x, y, z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(200));
+  const [x, y, z] = Array(3)
+    .fill()
+    .map(() => THREE.MathUtils.randFloatSpread(200));
+    
   star.position.set(x, y, z);
 
   const s = THREE.MathUtils.randFloatSpread(3);
@@ -68,8 +71,7 @@ function MoveCamera(){
   camera.position.x = t * -0.0002;
   camera.position.y = t * -0.0002;
 }
-
-//document.body.onscroll = MoveCamera
+document.body.onscroll = MoveCamera
 
 function Animate() {
   requestAnimationFrame( Animate );

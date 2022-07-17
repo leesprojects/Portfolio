@@ -22,16 +22,10 @@ body {
 #app{
   top: 0;
   left: 0;
-  position: absolute;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  height: 100%;
+  position: fixed;
 }
 
-.textbox {
-  grid-column: 1 / 10;
-  background-color: red;
-}
+
 
 .logo {
   height: 6em;
