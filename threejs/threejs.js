@@ -4,7 +4,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 
 //Colors
 const c_background = "#000000"
-const c_stars = "0xffffff"
+const c_stars = 0xffffff
 
 //Scene 
 const scene = new THREE.Scene();
