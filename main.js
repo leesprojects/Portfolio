@@ -1,25 +1,19 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import { setupCounter } from './counter.js'
 
 document.querySelector('#app').innerHTML = `
   <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
+    <h1>Lee Stevens</h1>
+    <div>
+    <a href="https://github.com/leesprojects"  target="_blank" rel="noopener noreferrer">
+    <img class="logo" src="./media/images/icon - github.png"></img></a>
+    <a href="https://stackoverflow.com/users/18739922/lee-stevens"  target="_blank" rel="noopener noreferrer">
+    <img class="logo" src="./media/images/icon - stackoverflow.png"></img></a>
+    <a href="https://www.linkedin.com/in/lee-stevens-dev/" target="_blank" rel="noopener noreferrer">
+    <img class="logo" src="./media/images/icon - linkedin.png"></img></a>
+    <a href="https://leetcode.com/Zaeroso/" target="_blank" rel="noopener noreferrer">
+    <img class="logo" src="./media/images/icon - leetcode.png"></img></a>
     </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
   </div>
 `
 
-setupCounter(document.querySelector('#counter'))
-
-import './threejs.js'
+import './threejs/threejs.js'
